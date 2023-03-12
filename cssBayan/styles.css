@@ -1,5 +1,4 @@
 .accordion-container {
-    margin: 20px 0;
     width: 60vw;
     display: block;
     margin-left: 20vw;
@@ -7,7 +6,7 @@
 }
 
 .accordion-container .accordion-body {
-    width: calc(100% - 40px);
+    width: auto;
     margin: 0 auto;
     height: 0;
     line-height: 18px;
@@ -16,8 +15,8 @@
     transition: color 0.5s, padding 0.5s;
     overflow: hidden;
     font-size: 16px;
-    transition-property: height;
-    transition: 4s all;
+    transition-property: height, width, background-color;
+    transition: 1s all;
 }
 .accordion-container .accordion-body p {
     margin: 0 0 10px;
@@ -57,8 +56,10 @@
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
-    transition-property: height;
-    transition: 2s all;
+    transition-property: height, width, background-color;
+    transition: 1s all;
+    background-color: rgb(255, 254, 240);
+    width: auto;
 }
 
 .accordion-container input:hover + label + .accordion-body  {
@@ -66,9 +67,10 @@
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
-    transition-property: height;
-    transition: 2s all;
-    background-color: aliceblue;
+    transition-property: height, width, background-color;
+    transition: 1s all;
+    background-color: rgba(252, 215, 29, 0.4);;
+    width: auto;
 }
 
 img {
